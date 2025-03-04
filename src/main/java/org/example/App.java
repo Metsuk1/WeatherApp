@@ -1,14 +1,14 @@
 package org.example;
 
-import services.weatherGui;
+import org.example.services.WeatherGuiService;
 
 import javax.swing.*;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new weatherGui().setVisible(true);
+                new WeatherGuiService().setVisible(true);
             }
         });
 
